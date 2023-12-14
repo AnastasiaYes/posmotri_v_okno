@@ -39,8 +39,7 @@ label{
   justify-content: center;
   margin: auto;
   color: #fff;
-  width: max-content;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   block-size: 100%;
@@ -53,23 +52,25 @@ label{
   flex-direction: row;
   align-items: flex-end;
   gap: 30px;
+  margin-bottom: 112px;
 }
 
-/*.result {*/
-/*  align-self: flex-end;*/
-/*}*/
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.result__video-container {
+  width: 710px;
+  height: 386px;
+}
 
 .result__video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-}
-
-.result__video-container {
-  position: relative;
-  width: 710px;
-  margin-bottom: 17px;
 }
 
 .search-form {
@@ -90,7 +91,7 @@ label{
 }
 
 .title {
-  font-family: Oswald;
+  font-family: 'Oswald', Arial, sans-serif;
   color: #fff;
   font-size: 75px;
   font-weight: 700;
@@ -107,13 +108,19 @@ label{
 }
 
 .content__list {
-  max-height: 298px;
+  position: relative;
+  height: 298px;
+  width: 404px;
   overflow: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
+/*.content__list::-webkit-scrollbar {*/
+/*  display: none;*/
+/*}*/
+
 .content__list-item:not(:last-of-type) {
-  margin-bottom: 25px;
+  margin-bottom: 32px;
 }
 
 .content__video-card {
@@ -132,10 +139,6 @@ label{
 }
 
 .result__video-container {
-  position: relative;
-}
-
-.content__list {
   position: relative;
 }
 
@@ -166,7 +169,7 @@ label{
 
 .content__video-card-title {
   color: #FFF;
-  font-family: Oswald;
+  font-family: 'Oswald', Arial, sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 1;
@@ -174,7 +177,7 @@ label{
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 0.9;
@@ -206,7 +209,7 @@ label{
   background-color: transparent;
   border: 1px solid #fff;
   text-align: center;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
 }

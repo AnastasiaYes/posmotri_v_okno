@@ -148,14 +148,15 @@ label{
   display: block;
 }
 
-.content__card-link:active {
-  background-color: #545050;
-}
-
 .content__card-link:hover {
   text-decoration: underline;
   text-underline-position: under;
   text-decoration-thickness: 1px;
+}
+
+.content__card-link:active {
+  background-color: #545050;
+  text-decoration: none;
 }
 
 .content__card-link:focus {
@@ -204,6 +205,10 @@ label{
   align-items: center;
 }
 
+.search-form__label:active {
+  outline: 1px solid #fff;
+}
+
 .button {
   color: #fff;
   background-color: transparent;
@@ -248,10 +253,6 @@ label{
   width: 225px;
 }
 
-.search-form__textfield:active {
-  border: 1px solid #fff;
-}
-
 .search-form__textfield:focus {
   outline: none;
 }
@@ -260,15 +261,15 @@ label{
   outline-offset: 1px;
 }
 
+.search-form__label-time:hover .search-form__label-text {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
 .search-form__checkbox[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   outline: 1px solid black;
   outline-offset: -2px;
   background-color: #fff;
-}
-
-.search-form__label-time:hover .search-form__label-text {
-  text-decoration: underline;
-  text-underline-position: under;
 }
 
 .search-form__label-time:focus-within {
@@ -291,11 +292,11 @@ label{
   text-decoration: none;
 }
 
+.button:focus {
+  outline: none;
+}
+
 .button:focus-visible {
   outline: 1px solid #fff;
   outline-offset: -3px;
-}
-
-.button:focus {
-  outline: none;
 }
